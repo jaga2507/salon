@@ -1,0 +1,110 @@
+.nav-bar {
+    width: 100%;
+    background-color: #004f87;
+    color: white;
+    font-size: 20px;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    position: fixed;
+}
+
+.nav-bar div:first-child {
+    margin-left: 30px;
+}
+
+.nav-bar div:last-child {
+    margin-right: 30px;
+}
+
+.salon-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 30px;
+    margin: 90px 20px 20px 20px;
+}
+
+.salon-details>div {
+    display: flex;
+    background-color: #004f8745;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.salon-details>div>div:last-child {
+    color: green;
+    font-size: 20px;
+}
+
+.dataTable {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.table {
+    background-color: #004f8745;
+    /* width: 9%; */
+    margin: auto;
+    /* padding: 20px; */
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.table>div:first-child {
+    padding: 20px;
+    background-color: #004f877c;
+    border-radius: 30px;
+}
+
+.salonData {
+    padding: 20px;
+    border-bottom: 1px solid #004f87;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dataTitle {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media all and (min-width: 521px) and (max-width:800px) {
+    .salon-details {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(2, 1fr) !important;
+        width: 95%;
+    }
+
+    .dataTable {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width:520px) {
+    .salon-details {
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: repeat(4, 1fr) !important;
+        width: 90%;
+    }
+
+    .dataTable {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
