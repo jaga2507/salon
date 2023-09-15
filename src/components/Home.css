@@ -5,11 +5,18 @@
     font-size: 20px;
     top: 0;
     height: 60px;
+    z-index: 200;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: 700;
     position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
 }
 
 .nav-bar div:first-child {
@@ -25,7 +32,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-gap: 30px;
-    margin: 90px 20px 20px 20px;
+    margin: 20px;
 }
 
 .salon-details>div {
@@ -56,13 +63,23 @@
     /* width: 9%; */
     margin: auto;
     /* padding: 20px; */
+    height: 686px;
+    overflow: hidden;
     border-radius: 30px;
     margin: 20px;
 }
 
 .table>div:first-child {
-    padding: 20px;
+    padding: 10px;
     background-color: #004f877c;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.view_btn {
+    background-color: #004f87;
+    color: white;
+    padding: 10px;
     border-radius: 30px;
 }
 
@@ -76,9 +93,64 @@
 
 .dataTitle {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 10px;
 }
+
+.dataTitle>div:first-child {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.date_picker {
+    margin: 90px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.date_picker input {
+    padding: 10px;
+    width: 200px;
+    height: 15px;
+    font-size: 16px !important;
+    border-radius: 7px;
+    outline: none;
+    background-color: white !important;
+    border: 2px solid #004f87 !important;
+    color: black;
+    /* background-color: #004f8745 !important; */
+}
+
+.modalBox>div:first-child {
+    font-size: 18px;
+    font-weight: 700;
+    /* margin-bottom: 10px; */
+    margin-top: 15px;
+}
+
+.list {
+    height: 600px;
+    overflow: auto;
+}
+
+.css-11rlezj-JoySheet-root {
+    padding: 10px !important;
+}
+
+.detail {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #004f87;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 
 @media all and (min-width: 521px) and (max-width:800px) {
     .salon-details {

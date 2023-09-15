@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Home from './components/Home';
+import Router from './components/Router/Router';
 
 function App() {
   return (
     <div>
-      <Home />
+      <Router />
     </div>
   );
 }
