@@ -93,8 +93,8 @@ function Home() {
                 </LocalizationProvider>
             </div>
             <div className="salon-details" >
-                <div>
-                    <div onClick={() => { setOverAllSale(true) }}>
+                <div onClick={() => { setOverAllSale(true) }}>
+                    <div>
                         Total Ravenue
                     </div>
                     <div>
