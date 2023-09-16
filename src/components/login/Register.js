@@ -47,7 +47,7 @@ function Login(props) {
                 <br></br>
                 <div className='login_input' >
                     <PasswordOutlinedIcon className='email_logo' />
-                    <input type='password' placeholder='enter your Office Address' />
+                    <input type='password' placeholder='enter your Password' />
                 </div>
                 <br></br>
                 <div>

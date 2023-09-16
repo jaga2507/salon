@@ -94,7 +94,7 @@ function Home() {
             </div>
             <div className="salon-details" >
                 <div>
-                    <div>
+                    <div onClick={() => { setOverAllSale(true) }}>
                         Total Ravenue
                     </div>
                     <div>
